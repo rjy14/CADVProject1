@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title> HighFashion</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/c40c131336.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css/cart.css" rel="stylesheet" />
+        <link rel="shorcut icon" href="images/h.JPG">
+        <script src = "js/users.js"></script>
+        <script src = "js/common.js"></script>
+        <script src = "js/products.js"></script>
+        <script src = "js/cart.js"></script>
+        <script src = "js/s.js"></script>
+    </head>
+    <body onload = "setNavBar();getProductInCart();">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">HighFashion</a>
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"  aria-label="Toggle navigation"
+                aria-controls="navbarSupportedContent" aria-expanded="false" data-mdb-target="#navbarSupportedContent">
+                    <i class="fas fa-bars"></i>
+                </button>
+                    <!-- Icons -->
+                    <ul class="navbar-nav d-flex flex-row me-1">
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link text-white" href="cart.html"><span class="fas fa-shopping-cart"></span></a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0" id="navUser">
+                            <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#loginForm"><span class="fa fa-fw fa-user"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       <br><br><br>
+       <h1>
+        Your Shopping cart
+       </h1>
+        <h2> 
+       <div class="row justifycenter" id="ProductInCart"></div>
+    </h2>
+   </body>
+   </html>
